@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2 {
+  margin: 20px;
+}
+body {
+  background: linear-gradient(45deg, #28b487, #7dd56f);
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.modal {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border: 1px solid rgb(8, 8, 8);
+  margin: 40px auto;
+  background-color: white;
+  z-index: 10;
+}
+.content {
+  margin: 50px;
+}
+.container {
+  height: 100vh;
+  border: 1px solid rgb(255, 254, 254);
+}
+.btn {
+  padding: 5px 20px;
+  border-radius: 15px;
+  margin: auto 10px;
+  border: 1px solid #28b487;
+  box-shadow: 2px 2px 5px rgb(46, 45, 45);
+}
+.btn-modal:hover,
+:focus {
+  background: linear-gradient(75deg, #28b487, #7dd56f, #b6d56f);
+}
+.close {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  padding: 5px;
+}
+.control {
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+.confirm {
+  background-color: #28b487;
+  color: white;
+  font-weight: bold;
+}
+.cancel {
+  background-color: rgba(233, 25, 25, 0.753);
+  color: white;
+  font-weight: bold;
+}
+.hidden {
+  display: none;
+}
